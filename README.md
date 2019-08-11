@@ -1,0 +1,2 @@
+# Teaching-Assistance-Application-Cpp17
+In every school, there are some teaching assistants and offered courses. In the beginning of the term these assistants must be assigned for offered courses which they have some requirements about teaching assistantance. Due to huge numbers of assistants and courses, this assignment task could be so painful. In this project the task is the writing a framework about this assignments with using modern C++ (C++17) features. 

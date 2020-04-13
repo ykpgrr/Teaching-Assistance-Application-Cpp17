@@ -8,12 +8,12 @@ SET(CMAKE_CXX_STANDARD_REQUIRED ON)
 SET(CMAKE_CXX_EXTENSIONS ON) # Boolean specifying whether compiler specific extensions are requested.
 
 add_executable(${PROJECT_NAME}
-    "main.cpp"
-    "csvio.h"
-    "Lecturer.h"
-    "course.h"
-    "assistant.h"
-    "data.h"
-    "greedysolver.h"
-    "optimalsolver.h"
+    "src/main.cpp"
+    "src/csvio.h"
+    "src/lecturer.h"
+    "src/course.h"
+    "src/assistant.h"
+    "src/data.h"
+    "src/greedysolver.h"
+    "src/optimalsolver.h"
     )

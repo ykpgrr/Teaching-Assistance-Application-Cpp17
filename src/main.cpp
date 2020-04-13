@@ -18,7 +18,7 @@ using namespace std;
 
 // It's not supportted by Mac OS!
 //auto INPUT_CSV_FOLDER = string (std::filesystem::current_path());
-auto INPUT_CSV_FOLDER = string ("."); // Enter PATH
+auto INPUT_CSV_FOLDER = string ("/Users/yakupgorur/SoftwareDeveloper/myGithub/Teaching-Assistance-Application-Cpp17"); // Enter PATH
 auto INPUT_ASSISTANT  = INPUT_CSV_FOLDER + "/ASSISTANTS.csv";
 auto INPUT_COURSES  = INPUT_CSV_FOLDER + "/COURSES.csv";
 
@@ -41,14 +41,14 @@ int main(){
     auto my_greedy = GreedySolver{test_data};
     my_greedy.Solver();
     my_greedy.PrintSolution();
-    my_greedy.WriteCsv(INPUT_CSV_FOLDER);
+    my_greedy.WriteCsv(INPUT_CSV_FOLDER + "/");
     cout<<endl<<endl<<"******End of the GreedySolver***"<<endl<<endl;
 
     cout<<endl<<endl<<"***** Starting OptimalSolver***"<<endl<<endl;
     auto my_optimal = OptimalSolver{test_data};
     my_optimal.Solver();
     my_optimal.PrintSolution();
-    my_optimal.WriteCsv(INPUT_CSV_FOLDER + "optimal");
+    my_optimal.WriteCsv(INPUT_CSV_FOLDER + "/" + "OPTIMAL_");
     cout<< endl << "Calculated Cost of the optimal Solution: "<<my_optimal.CalculateCost();
     cout<<endl<<endl<<"*****End of the OptimalSolver***"<<endl<<endl;
 }
